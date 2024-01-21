@@ -22,7 +22,7 @@ function Acheivment(props) {
             </div>
             <p className='font-medium text-lg '>✅ Other Skills</p>
             <div className='ml-6'>
-            <ul>↪️ Team Leader of my Hackathond Team</ul>
+            <ul>↪️ Team Leader of my Hackathon Team(MMBS)</ul>
             <ul>↪️ Hardworking</ul>
             <ul>↪️ Intelectual</ul>
             </div>
