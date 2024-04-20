@@ -1,8 +1,8 @@
 import {React} from 'react';
 import { useState, useEffect } from 'react';
-import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import emailjs from '@emailjs/browser';
 
 // require('dotenv').config()
 
@@ -11,53 +11,75 @@ import "react-toastify/dist/ReactToastify.css";
 
 
 
+
 function Contact(props) {
 
-  console.log(process.env.REACT_APP_BACKEND_URL);
 
   
   const [email, setEmail] = useState("");
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = async (e)=>{
-    e.preventDefault();
-
-    setName("");
-    setEmail("");
-    setMessage("");
 
 
-    await axios.post(`${process.env.REACT_APP_BACKEND_URL}api/send-mail`,{name, email, message})
-    .then(res=>{
-      if(res.data.code===200){
+    const sendEmail = async (e)=>{
+      e.preventDefault();
 
-        toast.success("Your Message Sent",{
-          position: "top-right"
-        })
-
-       
+      if(!name || !email || !message){
+        toast.error("Please fill out all fields.");
+        return;
       }
-      else{
-        toast.error("Not sent due to technical Problem",{
-          position: 'top-right'
-        })
+
+      let templateParams = {
+          "Name": name,
+          "Message": message,
+          "Email": email,
+          
+  
       }
-      
-    })
-    .catch(error =>{
-      toast.error(`${error.message}`,{
-        position: 'top-right'
+  
+
+
+  await emailjs.send(
+
+
+          process.env.REACT_APP_SERVICE_ID, // Replace with your service ID
+          process.env.REACT_APP_TEMPLATE_ID, // Replace with your template ID
+          templateParams,
+          process.env.REACT_APP_USER_ID // Replace with your user ID
+      )
+      .then((response) => {
+          if(response.status===200){
+              toast.success("Your Message Sent",{
+                  position: "top-right"
+                })
+          }
+
+
+          setName("");
+          setEmail("");
+          setMessage("");
+
+          console.log('Email sent:', response);
+
       })
-    })
-  }
+      .catch((error) => {
+          toast.error("Email Error..",{
+              position: "bottom-center"
+            })
+          console.error('Email error:', error);
+      });
+};
+
+    
+ 
 
 
   return (
     <div>
-                      <h1 className='text-5xl font-normal p-2'>{props.title}</h1>
+                <h1 className='text-5xl font-normal p-2'>{props.title}</h1>
                 <div>
-                <form  onSubmit={handleSubmit} >
+                <form  onSubmit={sendEmail} >
                
                <label for="website-admin" class="font-medium block mb-2 text-sm ">Name</label>
                <div class="flex mb-2">

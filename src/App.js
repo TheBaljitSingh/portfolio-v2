@@ -32,7 +32,7 @@ function App(){
 
   return (
     <div >
-      <div className='w-screen fixed max-h-screen  bg-yewala'>
+      <div className='w-screen  max-h-screen  bg-yewala'>
       {/* here navbar will go */}
       <nav className='bg-yewala text-gray-400 flex fixed w-screen p-8 h-auto'>
             <div className='flex-1 flex justify-center mr-auto'>
@@ -53,14 +53,14 @@ function App(){
             </div>      
       </nav>
          
-        <main className=' w-full h-screen my-24 text-gray-400 '>
+        <main className=' w-full h-screen my-24 text-gray-400 fixed '>
 
           <p className='absolute bottom-0 right-0 transform rotate-90 mb-44 text-xl font-normal'> <span className='text-yellow-300'>@ </span>|  <span className='select-all'> thebaljitsinghIN@gmail.com</span></p>
 
-          <div className='max-w-[1158px]  h-screen flex m-auto justify-between '>
+          <div className='max-w-[1158px] h-100% flex m-auto justify-between '>
             <div className=' w-2/3 flex-row my-8'> {/* margin change kar ke dekh le */}
               {/* this is for content */}
-              <div className='my-15'>
+              <div className='my-15 '>
                 <div className={showDiv.id==="Welcome!"? "Welcome!": "hidden"}>
                 <h1 className='text-5xl font-normal p-2 '>Welcome!</h1>
                 <p className='border border-blue-600 rounded-lg shadow-gray-400 p-4 text-xl '>Hey, I'm 
