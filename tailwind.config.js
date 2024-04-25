@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors:{
         'yewala':'#0f172a',
+       
     
       },
     },
