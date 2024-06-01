@@ -47,6 +47,15 @@ function Project(props){
                     <button className='w-20 h-10 space-x-1 justify-center items-center flex  p-2 rounded-lg bg-blue-600 text-gray-300'><a href="https://github.com/TheBaljitSingh/Gfg-hackathon-regionalRound-frontend" target="_blank">Github </a><LuExternalLink /></button>
                   </div>
                 </div>
+                <div className='p-4 border-solid rounded-xl mt-2'>
+                  <h3 className='text-2xl'>Fine - Finance ✅  </h3>
+                  <p className='p-2 mt-2'>Upgraded Version of Fine (Backend + Frontend)  </p>
+                   <div className='p-2 flex flex-row space-x-2 justify-center'>
+                    {/* <button className='w-22 space-x-1 h-10 justify-center items-center flex p-2 rounded-lg bg-blue-600 text-gray-300'><a href="/" target="_blank">View Demo </a><LuExternalLink /></button> */}
+                    <button className='w-22 space-x-1 h-10 justify-center items-center flex p-2 rounded-lg bg-blue-600 text-gray-300'><a href="https://fine-frontend.vercel.app/" target="_blank">View Demo </a><LuExternalLink /></button>
+                    <button className='w-20 h-10 space-x-1 justify-center items-center flex  p-2 rounded-lg bg-blue-600 text-gray-300'><a href="https://github.com/PatidarManas/Fine-lets-hack-parul" target="_blank">Github </a><LuExternalLink /></button>
+                  </div>
+                </div>
                 </div>
               
 
