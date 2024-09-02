@@ -55,7 +55,9 @@ function App(){
          
         <main className=' w-full h-screen my-24 text-gray-400 fixed '>
 
-          <p className='absolute bottom-0 right-0 transform rotate-90 mb-64 text-xl font-normal'> <span className='text-yellow-300'>@ </span>|  <span className='select-all'> thebaljitsinghIN@gmail.com</span></p>
+        <a href="mailto:thebaljitsinghin@gmail.com" className='absolute bottom-0 right-0 transform rotate-90 mb-64 text-xl font-normal mail'>
+          <span className='text-yellow-300'>@ </span>|  <span className='select-all'>thebaljitsinghIN@gmail.com</span>
+        </a>
 
           <div className='max-w-[1158px] h-100% flex m-auto justify-between '>
             <div className=' w-2/3 flex-row my-8'> {/* margin change kar ke dekh le */}
