@@ -122,6 +122,9 @@ function App(){
 
         </main>
 
+      <footer>
+        footer
+      </footer>
       </div>
         
         
