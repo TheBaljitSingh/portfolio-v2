@@ -29,6 +29,25 @@ function Project(props) {
                 </div>
 
                 <div className='p-4 border-solid rounded-xl mt-2'>
+                    <h3 className='text-2xl'>Chrome Extention for Linkedin Messaging ✅</h3>
+                    <p className='p-2 mt-2'>This is Assignment Project | Developed a Chrome Extention for linkedin. which it enabel user to use it to generate text while messaging to people for better react or response</p>
+                    <div className='p-2 flex flex-row space-x-2 justify-center'>
+                        {/* <button className='w-22 h-10 justify-center items-center flex p-2 rounded-lg bg-blue-600 text-gray-300'>
+                            <a href="https://fine-frontend.vercel.app/" className="flex items-center space-x-1" target="_blank">
+                                <span>View Demo</span>
+                                <LuExternalLink />
+                            </a>
+                        </button> */}
+                        <button className='w-20 h-10 justify-center items-center flex p-2 rounded-lg bg-blue-600 text-gray-300'>
+                            <a href="https://github.com/TheBaljitSingh/chrome-extention-for-linkedin-messaging" className="flex items-center space-x-1" target="_blank">
+                                <FaGithub />
+                                <span>Github</span>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <div className='p-4 border-solid rounded-xl mt-2'>
                     <h3 className='text-2xl'>ApnaBlog - a Blogging Platform ✅</h3>
                     <p className='p-2 mt-2'>ApnaBlog is a blogging website where you can create your posts and also view blogs shared publicly by other authors. Implemented Redux for article viewing.</p>
                     <div className='p-2 flex flex-row space-x-2 justify-center'>
@@ -91,6 +110,8 @@ function Project(props) {
                         </button>
                     </div>
                 </div>
+
+            
             </div>
         </div>
     )
