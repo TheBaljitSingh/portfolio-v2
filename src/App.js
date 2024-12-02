@@ -72,7 +72,7 @@ function App(){
                     </a> 
                     <span>Baljit</span> 
                 </span>
-                . A pre-final year student deeply passionate about software engineering. From coding challenges to collaborative projects, I thrive on turning innovative ideas into reality. Passionate about turning ideas into impactful solutions. Join me in discovering the exciting world of software engineering!
+                . A final year student deeply passionate about software engineering. From coding challenges to collaborative projects, I thrive on turning innovative ideas into reality. Passionate about turning ideas into impactful solutions. Join me in discovering the exciting world of software engineering!
                 </p>
                 </div>
                 <div className={showDiv.id==="Project"? "Project": "hidden" } >
