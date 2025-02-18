@@ -3,7 +3,7 @@ import { LuExternalLink } from "react-icons/lu";
 
 function Project(props) {
     return (
-        <div className="h-auto p-4 ">
+        <div className=" p-4  ">
             <h1 className="text-5xl font-normal p-2 underline underline-offset-4 decoration-2">{props.title}</h1>
             <p className="p-4">As a MERN Stack Developer, I have developed numerous frontend and backend projects, focusing on creating scalable and user-friendly applications.</p>
 
@@ -34,7 +34,7 @@ function Project(props) {
             </div>
 
             {/* Projects Section */}
-            <div className=" h-auto p-2">
+            <div className=" p-2">
                 {/* Weather Condition Checker */}
                 <div className="p-4 border rounded-xl mb-4">
                     <h3 className="text-2xl font-semibold">Weather Condition Checker ✅</h3>

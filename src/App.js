@@ -32,7 +32,7 @@ function App(){
   return (
     <div >
   <Social/>
-      <div className='max-w-full    bg-yewala'>
+      <div className='max-w-full h-auto bg-yewala'>
       {/* here navbar will go */}
          
         <main className='  text-gray-400  '>
@@ -42,7 +42,7 @@ function App(){
         </a>
 
           <div className='max-w-[1158px] flex m-auto justify-between '>
-            <div className=' w-2/3 flex-row my-8'> {/* margin change kar ke dekh le */}
+            <div className=' h-screen w-2/3 flex-row my-8'> {/* margin change kar ke dekh le */}
               {/* this is for content */}
               <div className='my-15  '>
                 <div className={showDiv.id==="Welcome!"? "Welcome!  font-thin": "hidden"}>
@@ -72,16 +72,12 @@ function App(){
 
                
                 </div>
-                
-
               </div>
-
-              
 
             </div>
             
          
-            <div className=' w-1/3 h-screen flex'>
+            <div className=' w-1/3 h-auto flex'>
               {/* this is for sidebar */}
               <div className='flex flex-col items-center justify-center w-full mb-32 '>
               
