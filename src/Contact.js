@@ -77,7 +77,8 @@ function Contact(props) {
 
   return (
     <div>
-                <h1 className='text-5xl font-normal p-2'>{props.title}</h1>
+                        <h1 className='text-5xl fix font-normal p-2 underline underline-offset-4 decoration-2 '>{props.title}</h1>
+
                 <div>
                 <form  onSubmit={sendEmail} >
                

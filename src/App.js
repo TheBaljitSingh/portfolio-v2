@@ -1,13 +1,12 @@
 import './App.css';
 import { useState, useEffect } from 'react';
-import { FaStackOverflow, FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa6";
-import { LuExternalLink } from "react-icons/lu";
+
 
 import Baljit from "../src/Baljit_maskup.jpg";
 import Project from './Projects';
 import Contact from './Contact';
 import Acheivment from './Acheivment';
+import Social from "./components/Social"
 
 
 
@@ -32,48 +31,33 @@ function App(){
 
   return (
     <div >
-      <div className='w-screen  max-h-screen  bg-yewala'>
+  <Social/>
+      <div className='max-w-full    bg-yewala'>
       {/* here navbar will go */}
-      <nav className='bg-yewala text-gray-400 flex fixed w-screen p-8 h-auto'>
-            <div className='flex-1 flex justify-center mr-auto'>
-            <h2 className='font-semibold text-2xl hover:cursor-pointer '>Baljit Singh</h2>
-            </div>   
-            <div className='mx-72'>
-            </div> 
-            <div className='flex-1 flex justify-center ml-auto space-x-5 '>
-
-              <div > <a href="https://stackoverflow.com/users/11642996/baljit-singh">< FaStackOverflow size={30} /></a>
-              </div>
-              <div>   <a href="https://github.com/TheBaljitSingh"><FaGithub size={30} /></a>
-              </div>
-              <div>  <a href="https://www.linkedin.com/in/thebaljitsingh/"><FaLinkedin size={30} /></a>
-              </div>
-                       
-
-            </div>      
-      </nav>
          
-        <main className=' w-full h-screen my-24 text-gray-400 fixed '>
+        <main className='  text-gray-400  '>
 
-        <a href="mailto:thebaljitsinghin@gmail.com" className='absolute bottom-0 right-0 transform rotate-90 mb-64 text-xl font-normal mail'>
+        <a href="mailto:thebaljitsinghin@gmail.com" className=' fixed bottom-0 right-0 transform rotate-90 mb-64 text-xl font-normal mail'>
           <span className='text-yellow-300'>@ </span>|  <span className='select-all'>thebaljitsinghIN@gmail.com</span>
         </a>
 
-          <div className='max-w-[1158px] h-100% flex m-auto justify-between '>
+          <div className='max-w-[1158px] flex m-auto justify-between '>
             <div className=' w-2/3 flex-row my-8'> {/* margin change kar ke dekh le */}
               {/* this is for content */}
-              <div className='my-15 '>
-                <div className={showDiv.id==="Welcome!"? "Welcome!": "hidden"}>
-                <h1 className='text-5xl font-normal p-2 '>Welcome!</h1>
-                <p className='border border-blue-600 rounded-lg shadow-gray-400 p-4 text-xl '>Hey, I'm 
-                <span className='inline-flex items-baseline'>
+              <div className='my-15  '>
+                <div className={showDiv.id==="Welcome!"? "Welcome!  font-thin": "hidden"}>
+                <h1 className='text-5xl  font-normal p-2 underline underline-offset-4 decoration-2 mb-8'>Welcome!</h1>
+
+                {/* <h1 className='text-5xl fix  '>{props.title}</h1> */}
+
+                <p className='border-l border-blue-600 rounded-lg shadow-gray-400 p-4 text-xl '>Hey, I'm 
+                <span className='inline-flex items-baseline '>
                   <a href="https://twitter.com/TheBaljitSingh"> 
                     <img src={Baljit} alt="Baljit Singh from Parul University" className='self-center w-5 h-5 rounded-full mx-1 ' /> 
                     </a> 
-                    <span>Baljit</span> 
+                    <span>Baljit </span> 
                 </span>
-                . A final year student deeply passionate about software engineering. From coding challenges to collaborative projects, I thrive on turning innovative ideas into reality. Passionate about turning ideas into impactful solutions. Join me in discovering the exciting world of software engineering!
-                </p>
+                 .  A passionate Software Engineering student graduating in 2025, excelling in web development, programming, data structures, and algorithms. Proficient in HTML, CSS, JavaScript, React, and Node.js, with a strong ability to create user-friendly and scalable web applications. Demonstrated teamwork and problem-solving skills through active participation in hackathons and collaborative projects. seeking opportunities to contribute to innovative and impactful projects. let’s connect to collaborate for mutual growth and success!                </p>
                 </div>
                 <div className={showDiv.id==="Project"? "Project": "hidden" } >
                 <Project title="Project" />
@@ -123,7 +107,7 @@ function App(){
         </main>
 
       <footer>
-        footer
+        {/* footer */}
       </footer>
       </div>
         
