@@ -3,7 +3,7 @@ import React from 'react'
 function Acheivment(props) {
   return (
     <div>
-        <h1 className='text-5xl fix font-normal p-2 underline decoration-2 underline-offset-4'>{props.title}</h1>
+        <h1 className='text-5xl fix font-normal p-2 underline underline-offset-4 decoration-2 '>{props.title}</h1>
         
         <div className='ml-12 mt-4  space-y-2 '>
             <p className='font-medium text-lg  space-y-2 '>✅ Participated In various hackathons</p>
