@@ -32,7 +32,7 @@ function App(){
   return (
     <div >
   <Social/>
-      <div className='max-w-full h-auto bg-yewala'>
+      <div className='max-w-full max-h-full bg-yewala'>
       {/* here navbar will go */}
          
         <main className='  text-gray-400  '>
@@ -41,10 +41,10 @@ function App(){
           <span className='text-yellow-300'>@ </span>|  <span className='select-all'>thebaljitsinghIN@gmail.com</span>
         </a>
 
-          <div className='max-w-[1158px] flex m-auto justify-between '>
-            <div className=' h-screen w-2/3 flex-row my-8'> {/* margin change kar ke dekh le */}
+          <div className='max-w-[1158px]  h-screen flex m-auto justify-between '>
+            <div className=' w-2/3 flex-row my-8'> {/* margin change kar ke dekh le */}
               {/* this is for content */}
-              <div className='my-15  '>
+              <div className='my-15 mt-20  '>
                 <div className={showDiv.id==="Welcome!"? "Welcome!  font-thin": "hidden"}>
                 <h1 className='text-5xl  font-normal p-2 underline underline-offset-4 decoration-2 mb-8'>Welcome!</h1>
 
@@ -52,7 +52,7 @@ function App(){
 
                 <p className='border-l border-blue-600 rounded-lg shadow-gray-400 p-4 text-xl '>Hey, I'm 
                 <span className='inline-flex items-baseline '>
-                  <a href="https://twitter.com/TheBaljitSingh"> 
+                  <a href="https://www.linkedin.com/in/thebaljitsingh"> 
                     <img src={Baljit} alt="Baljit Singh from Parul University" className='self-center w-5 h-5 rounded-full mx-1 ' /> 
                     </a> 
                     <span>Baljit </span> 
@@ -77,7 +77,7 @@ function App(){
             </div>
             
          
-            <div className=' w-1/3 h-auto flex'>
+            <div className='fixed w-1/3 h-auto ml-[700px] mt-[240px] '>
               {/* this is for sidebar */}
               <div className='flex flex-col items-center justify-center w-full mb-32 '>
               

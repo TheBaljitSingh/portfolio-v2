@@ -16,7 +16,7 @@ function Acheivment(props) {
             <p className='font-medium text-lg '>✅ Coding Platform Ratings</p>
             <div className='ml-6'>
             <ul>↪️ 1150+ on Codechef</ul>
-            <ul>↪️ Solved over 250+ Algorithmic and DS problems on Leetcode, Codechef and more<span><a href="https://auth.geeksforgeeks.org/user/thebaljitsingh" target='_blank' >GfG </a></span>(240+ Point)</ul>
+            <ul>↪️ Solved over 250+ Algorithmic and Data Structure problems on Leetcode, Codechef and GFG </ul>
             <ul>↪️More!!</ul>
            
             </div>
