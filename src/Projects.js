@@ -38,15 +38,14 @@ function Project(props) {
                 
 
               
-
-                {/* Online Grievance Management */}
-                <div className="p-4 border rounded-xl mb-4">
+   {/* GlobeTrotter Game  */}
+   <div className="p-4 border rounded-xl mb-4">
                     
-                    <h3 className="text-2xl font-semibold ">  Online Grievance Management ✅</h3>
-                    <p className="p-2 mt-2">A web-based platform for lodging, tracking, and resolving grievances efficiently.</p>
+                    <h3 className="text-2xl font-semibold ">  GlobeTrotter Game ✅</h3>
+                    <p className="p-2 mt-2">A web-based Game for Traveler Integrated Google Gimini API to generate Dynamic Data in it check once.</p>
                     <div className="p-2 flex space-x-2 justify-end">
                         <a
-                            href="https://online-grievance-management.vercel.app/"
+                            href="https://headout-assignment-psi.vercel.app/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center justify-center w-32 h-10 rounded-lg bg-blue-600 text-gray-300 hover:bg-blue-700 transition-colors"
@@ -55,7 +54,7 @@ function Project(props) {
                             <LuExternalLink className="ml-1" />
                         </a>
                         <a
-                            href="https://github.com/TheBaljitSingh/Online-Grievance-Management"
+                            href="https://github.com/TheBaljitSingh/Headout-assignment"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="flex items-center justify-center w-32 h-10 rounded-lg bg-blue-600 text-gray-300 hover:bg-blue-700 transition-colors"
@@ -83,6 +82,32 @@ function Project(props) {
                     </div>
                 </div>
 
+                {/* Online Grievance Management */}
+                <div className="p-4 border rounded-xl mb-4">
+                    
+                    <h3 className="text-2xl font-semibold ">  Online Grievance Management ✅</h3>
+                    <p className="p-2 mt-2">A web-based platform for lodging, tracking, and resolving grievances efficiently.</p>
+                    <div className="p-2 flex space-x-2 justify-end">
+                        <a
+                            href="https://online-grievance-management.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-center w-32 h-10 rounded-lg bg-blue-600 text-gray-300 hover:bg-blue-700 transition-colors"
+                        >
+                            <span>View Demo</span>
+                            <LuExternalLink className="ml-1" />
+                        </a>
+                        <a
+                            href="https://github.com/TheBaljitSingh/Online-Grievance-Management"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-center w-32 h-10 rounded-lg bg-blue-600 text-gray-300 hover:bg-blue-700 transition-colors"
+                        >
+                            <FaGithub className="mr-1" />
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
                 {/* ApnaBlog - Blogging Platform */}
                 <div className="p-4 border rounded-xl mb-4">
                     <h3 className="text-2xl font-semibold ">ApnaBlog - Blogging Platform ✅</h3>
