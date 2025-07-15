@@ -8,12 +8,33 @@ function Project(props) {
             <p className="p-4">As a MERN Stack Developer, I have developed numerous frontend and backend projects, focusing on creating scalable and user-friendly applications.</p>
 
             {/* Internship Section */}
+             <div className="p-4 border-b border-black rounded-xl mb-6">
+                <div className="flex justify-between">
+                <h3 className="text-2xl font-semibold">Backend Developer Intern</h3>
+                <div className=" flex justify-center">
+                                    <h6 className="text-2xl font-semibold">March 2025 - Present</h6>
+
+                  
+                </div>
+
+
+                </div>
+                <ul className="list-disc list-inside p-2 mt-2 space-y-2">
+                    <ul>+ Working with a microservices architecture(kafka)</ul>
+                <ul>+ Builded Notification System Integrated with FCM(Firebase Cloud Messaging).</ul>  
+<ul>+ AWS S3(presigned url and more)</ul>
+<ul>+ Integration of Google Map APIs.</ul>
+
+
+                </ul>
+             
+            </div>
             <div className="p-4 border-b border-black rounded-xl mb-6">
                 <div className="flex justify-between">
-                <h3 className="text-2xl font-semibold">Intern at Trustopay | 2024</h3>
+                <h3 className="text-2xl font-semibold">Intern at Trustopay | Aug. 2024 - Sept. 2024</h3>
                 <div className="p-2 flex justify-center">
                     <a
-                        href="https://trustopay-new.vercel.app/"
+                        href="https://x.com/thebaljitsingh/status/1904217031601487945"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center justify-center w-32 h-10 rounded-lg bg-blue-600 text-gray-300 hover:bg-blue-700 transition-colors"
@@ -31,6 +52,7 @@ function Project(props) {
                 </ul>
              
             </div>
+           
 
             {/* Projects Section */}
             <div className=" p-2">

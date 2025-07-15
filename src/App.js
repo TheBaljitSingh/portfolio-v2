@@ -35,11 +35,20 @@ function App(){
       <div className='max-w-full max-h-full bg-yewala'>
       {/* here navbar will go */}
          
-        <main className='  text-gray-400  '>
+        <main className='text-gray-400'>
 
-        <a href="mailto:thebaljitsinghin@gmail.com" className=' fixed bottom-0 right-0 transform rotate-90 mb-64 text-xl font-normal mail'>
-          <span className='text-yellow-300'>@ </span>|  <span className='select-all'>thebaljitsinghIN@gmail.com</span>
-        </a>
+         <div
+          className="cursor-pointer z-50 fixed bottom-0 right-0 transform rotate-90 mb-64 text-xl font-normal mail p-2"
+          title="Click to copy email"
+          onClick={() => {
+            navigator.clipboard.writeText('thebaljitsinghin@gmail.com');
+            alert("Email copied to clipboard");
+          }}
+        >
+          <span className="text-yellow-300">@</span> |{' '}
+          <span className="select-all">thebaljitsinghin@gmail.com</span>
+        </div>
+
 
           <div className='max-w-[1158px]  h-screen flex m-auto justify-between '>
             <div className=' w-2/3 flex-row my-8'> {/* margin change kar ke dekh le */}
