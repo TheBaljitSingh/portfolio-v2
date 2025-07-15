@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 
 import Baljit from "../src/Baljit_maskup.jpg";
-import Project from './Projects';
+import Experience from './Experience';
 import Contact from './Contact';
 import Acheivment from './Acheivment';
 import Social from "./components/Social"
@@ -66,10 +66,10 @@ function App(){
                     </a> 
                     <span>Baljit </span> 
                 </span>
-                 .  A passionate Software Engineering student graduating in 2025, excelling in web development, programming, data structures, and algorithms. Proficient in HTML, CSS, JavaScript, React, and Node.js, with a strong ability to create user-friendly and scalable web applications. Demonstrated teamwork and problem-solving skills through active participation in hackathons and collaborative projects. seeking opportunities to contribute to innovative and impactful projects. let’s connect to collaborate for mutual growth and success!                </p>
+                 .  A passionate Software Engineering student graduating in 2025, excelling in web development, programming, data structures, and algorithms. Proficient in HTML, CSS, JavaScript, React, and Node.js, with a strong ability to create user-friendly and scalable web applications. Demonstrated teamwork and problem-solving skills through active participation in hackathons and collaborative Experiences. seeking opportunities to contribute to innovative and impactful Experiences. let’s connect to collaborate for mutual growth and success!                </p>
                 </div>
-                <div className={showDiv.id==="Project"? "Project": "hidden" } >
-                <Project title="Project" />
+                <div className={showDiv.id==="Experience"? "Experience": "hidden" } >
+                <Experience title="Experience" />
                 
                 </div>
                 <div className={showDiv.id==="Acheivment"? "Acheivment": "hidden"} >
@@ -94,7 +94,7 @@ function App(){
                 <button id='Welcome!' onClick={(e)=>{toggleDiv(e)}}  className='w-32 p-4 text-lg focus:text-gray-300  rounded-lg ease-in-out duration-100 ' >Welcome</button>
               </div>
               <div>
-                <button id='Project' onClick={(e)=> toggleDiv(e)} className='w-32 p-4 text-lg focus:text-gray-300   rounded-lg ease-in-out duration-100'  >Projects</button>
+                <button id='Experience' onClick={(e)=> toggleDiv(e)} className='w-32 p-4 text-lg focus:text-gray-300   rounded-lg ease-in-out duration-100'  >Experience</button>
               </div>
               <div>
                 <button id='Acheivment' onClick={(e)=>{toggleDiv(e)}} className='w-32 p-4 text-lg focus:text-gray-300     rounded-lg ease-in-out duration-100'  >Acheivments</button>
