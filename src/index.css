@@ -3,23 +3,3 @@
 @tailwind utilities;
 
 
-body{
-  margin: 0;
-  background-color: #0f172a;
-}
-
-/* For WebKit-based browsers like Chrome */
-
-/* For WebKit-based browsers like Chrome */
-::-webkit-scrollbar {
-  width: 10px; /* Width of the scrollbar */
-  background-color: #0f172a; /* Background color of the scrollbar track */
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #9ca3af; /* Color of the scrollbar thumb */
-  border-radius: 5px; /* Border radius of the scrollbar thumb */
-}
-
-
-
