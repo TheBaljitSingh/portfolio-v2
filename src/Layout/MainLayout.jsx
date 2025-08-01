@@ -1,8 +1,9 @@
 import React from 'react'
 import Navbar from '../components/Navbar.jsx'
 import Footer from '../components/Footer.jsx'
+import { Outlet } from 'react-router-dom'
 
-const MainLayout = ({ children }) => {
+const MainLayout = () => {
   return (
     <div className="relative min-h-screen px-4 md:px-20 lg:px-52 overflow-hidden">
       {/* Grid background */}
@@ -15,7 +16,9 @@ const MainLayout = ({ children }) => {
 
       <Navbar />
 
-      <main className="flex-grow pt-24">{children}</main>
+      <main className="flex-grow pt-24">
+        <Outlet/>
+      </main>
 
       <Footer />
     </div>
