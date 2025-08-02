@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaReact, FaNode, FaCss3, FaHtml5, FaVuejs, FaNodeJs } from "react-icons/fa";
+import { FaReact, FaNode, FaCss3, FaHtml5, FaVuejs, FaNodeJs, FaGithub, FaIntercom, FaInternetExplorer } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import invoiceImg from '../images/invoice-generator.png'
@@ -9,6 +9,7 @@ import trustopay from "../images/trustupay logo.png";
 import meetmux from "../images/meetmux_logo.jpeg"
 import weatherImg from "../images/weather.png"
 import GlobeTrotter from '../images/Globetrotter.png'
+import { CiGlobe } from 'react-icons/ci';
 
 
 export default function Home() {
@@ -21,38 +22,41 @@ export default function Home() {
     {
       title: "Invoice Generator",
       description: "A Simple Invoice Generator Tool, Generate customizable invoices. Add your branding, calculate taxes, and download with effortlessly",
-      tech: [<FaReact />, <SiTailwindcss />],
+      tech: ['React', 'TailwindCss'],
       image: invoiceImg,
-      link: 'https://invoice-generator-in.vercel.app/'
+      link: ['https://github.com/TheBaljitSingh/invoice-generator', 'https://invoice-generator-in.vercel.app/']
     },
     {
       title: "Event Schedular",
       description: "Event Schedular: Scheduling Simplified Streamline your event planning process with our comprehensive platform",
-      tech: [<FaReact />, <SiTailwindcss />, <FaNode />],
+      tech: ['React', 'TailwindCss', 'Nodejs'],
       image: eventSchedular,
-      link: 'https://eventscheduling.vercel.app/'
+      link: ['https://github.com/TheBaljitSingh/EventSchedular_Frontend', 'https://eventscheduling.vercel.app/']
     },
     {
       title: "Chatgpt Clone",
       description: "A clone of Chatgpt's website that take input and give answers of user",
-      tech: [<FaReact />],
+      tech: ['Nextjs', 'TailwindCss'],
       image: chatgptImg,
-      link: 'https://chatgpt-ui-ten-hazel.vercel.app/'
+      link: ['https://github.com/TheBaljitSingh/chatgpt-ui', 'https://chatgpt-ui-ten-hazel.vercel.app/']
     },
     {
-      title:"Globetrotter Game",
+      title: "Globetrotter Game",
       description: "A Game assignment project where you have to guess the place via given clues. and you will get points +2 if its correct guess",
-      image:GlobeTrotter,
-      tech:[<FaReact/>, <FaNodeJs/>],
-      link: 'https://headout-assignment-psi.vercel.app/'
+      image: GlobeTrotter,
+      tech: ['React', 'Node.js', 'Google Gimini', 'Mongodb'],
+      link: ['https://github.com/TheBaljitSingh/Headout-assignment', 'https://headout-assignment-psi.vercel.app/']
     },
     {
-      title:"Weather Condition Checker",
-      description:'Real-time weather conditions using OpenWeather API.',
-      tech:[<FaReact/>],
-      image:weatherImg,
-      link:'https://weather-cond-check.vercel.app/'
+      title: "Weather Condition Checker",
+      description: 'Real-time weather conditions using OpenWeather API.',
+      tech: ['React'],
+      image: weatherImg,
+      link: ['https://github.com/TheBaljitSingh/weather-condition-checker-project', 'https://weather-cond-check.vercel.app/']
     }
+  ];
+  const skills = [
+    "C++", "React", "Node.js", "Javascript", "Node.js", "Next.js", "Postgres", "Docker", "AWS"
   ];
 
   return (
@@ -62,56 +66,93 @@ export default function Home() {
       {/* Profile Section */}
       <div className="text-center mb-10 mt-12">
         <h1 className="text-4xl font-bold text-gray-900">
-          Baljit <span className="text-gray-600">Singh</span>
+          Hi, I'm Baljit 👋
         </h1>
         <span className="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full mt-2 inline-block">
-          Software Engineer
+          Aspiring Software Engineer
         </span>
-        <p className="mt-4 text-gray-600 max-w-xl mx-auto">
-          A passionate Software Engineer. strong ability to create user-friendly and scalable System which is lovable by users.
-        </p>
+
+      </div>
+
+      <div className="my-6">
+        <h2 className="text-xl font-semibold mb-4">Skills</h2>
+        <div className="flex flex-wrap gap-3  justify-center">
+          {skills.map((skill, idx) => (
+            <span
+              key={idx}
+              className="bg-black text-white px-3 py-1 rounded-full text-sm font-semibold shadow"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
       </div>
 
       {/* Projects Header */}
-      <h2 className="text-xl font-semibold mb-4 text-gray-800">
-        I love building things
-      </h2>
+      <div className='flex justify-start mt-12'>
 
-      {/* Carousel */}
-      <div className="relative">
-        <div className="overflow-hidden">
-          <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${index * 100}%)` }}>
-            {projects.map((project, i) => (
-              <div key={i} className="min-w-full p-4">
-                <a href={project.link}>
-                  <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:cursor-pointer">
-                    <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
-                    <div className="p-4">
-                      <h3 className="font-bold text-lg mb-2">{project.title}</h3>
-                      <p className="text-sm text-gray-600 mb-3">{project.description}</p>
-                      <div className="flex space-x-2 text-xl text-gray-500">{project.tech}</div>
-                    </div>
-                  </div>
+
+        <h2 className="text-3xl font-bold mb-8">My Projects</h2>
+
+
+      </div>
+      {/* grid card */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {projects.map((project, i) => (
+          <div key={i} className="bg-white rounded-xl shadow-lg overflow-hidden">
+            <a href={project.link[1]}>
+
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-48 object-cover hover:cursor-pointer"
+              />
+              </a>
+
+            <div className="p-4 space-y-2">
+              {/* Title & Description */}
+              <h3 className="font-bold text-lg">{project.title}</h3>
+              <p className="text-sm text-gray-600">{project.description}</p>
+
+              {/* Tech Stack */}
+              <div className="flex flex-wrap gap-2 text-sm">
+                {project.tech.map((t, idx) => (
+                  <span
+                    key={idx}
+                    className="bg-gray-100 text-gray-600 px-3 py-1 rounded-full font-medium"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+
+              {/* Links: Website & Source */}
+              <div className="flex flex-wrap gap-3 pt-2">
+                <a
+                  href={project.link[1]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-black text-white px-3 py-1 rounded-lg text-sm font-medium hover:bg-gray-800"
+                >
+                  <CiGlobe className="text-base" />
+                  Website
+                </a>
+                <a
+                  href={project.link[0]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-black text-white px-3 py-1 rounded-lg text-sm font-medium hover:bg-gray-800"
+                >
+                  <FaGithub className="text-base" />
+                  Source
                 </a>
               </div>
-            ))}
+            </div>
           </div>
-        </div>
-
-        {/* Arrows */}
-        <button
-          onClick={handlePrev}
-          className="absolute left-2 top-1/2 -translate-y-1/2 p-2 bg-white rounded-full shadow hover:bg-gray-100"
-        >
-          <ChevronLeft />
-        </button>
-        <button
-          onClick={handleNext}
-          className="absolute right-2 top-1/2 -translate-y-1/2 p-2 bg-white rounded-full shadow hover:bg-gray-100"
-        >
-          <ChevronRight />
-        </button>
+        ))}
       </div>
+
+
 
       <div className="min-h-screen py-16 px-4 md:px-10  text-gray-800">
         <h2 className="text-3xl font-bold mb-8">Work Experience</h2>
