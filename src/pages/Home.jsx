@@ -56,7 +56,7 @@ export default function Home() {
     }
   ];
   const skills = [
-    "C++", "React", "Node.js", "Javascript", "Node.js", "Next.js", "Postgres", "Docker", "AWS"
+    "C++", "React", "Node.js", "Javascript", "Node.js", "Next.js", "Postgres", "Docker","Kafka", "AWS"
   ];
 
   return (
@@ -75,7 +75,7 @@ export default function Home() {
       </div>
 
       <div className="my-6">
-        <h2 className="text-xl font-semibold mb-4">Skills</h2>
+        <h2 className="text-2xl font-bold mb-6 ">Skills</h2>
         <div className="flex flex-wrap gap-3  justify-center">
           {skills.map((skill, idx) => (
             <span
@@ -92,12 +92,12 @@ export default function Home() {
       <div className='flex justify-start mt-12'>
 
 
-        <h2 className="text-3xl font-bold mb-8">My Projects</h2>
 
 
       </div>
       {/* grid card */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <h2 className="text-3xl font-bold mb-8 ">Projects</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:px-4">
         {projects.map((project, i) => (
           <div key={i} className="bg-white rounded-xl shadow-lg overflow-hidden">
             <a href={project.link[1]}>
@@ -154,45 +154,72 @@ export default function Home() {
 
 
 
-      <div className="min-h-screen py-16 px-4 md:px-10  text-gray-800">
-        <h2 className="text-3xl font-bold mb-8">Work Experience</h2>
+    <div className="min-h-screen py-16 md:px-1 text-gray-800">
+  <h2 className="text-3xl font-bold mb-8 ">Work Experience</h2>
 
-        {/* MeetMux */}
-        <div className="mb-10">
-          <div className="flex items-center space-x-2">
-            <h3 className="text-xl font-semibold">
-              Backend Developer Intern @ MeetMux
-            </h3>
-            <img src={meetmux} alt="Trustopay Logo" className="w-6 h-6 object-contain" />
-          </div>
+  {/* MeetMux */}
+  <div className="mb-10 md:px-4">
+<div className="flex items-end space-x-2">
+  <h3 className="text-xl font-semibold">
+    Software Engineer – MeetMux
+  </h3>
+  <a
+    href="https://www.linkedin.com/company/meetmux/" // Replace with actual LinkedIn URL
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block"
+  >
+    <img
+      src={meetmux}
+      alt="Meetmux Logo"
+      className="w-6 h-6 object-contain"
+    />
+  </a>
+</div>
 
-          <p className="text-sm text-gray-500">Mar 2025 – Present · Remote</p>
-          <ul className="list-disc list-inside mt-2 space-y-1">
-            <li>Working on Event-Driven Architecture with Kafka</li>
-            <li>Built Notification System with FCM (Firebase Cloud Messaging)</li>
-            <li>Designed a scalable post schema for structured live, planned and general activity</li>
-            <li>Contributed to restructuring the backend from monolithic to multiple microservices</li>
-            <li><strong>Tech Stack:</strong> Node.js, Express, Docker, Kafka, Sequelize, PostgreSQL, Firebase</li>
-          </ul>
-        </div>
 
-        {/* Trustopay */}
-        <div>
-          <div className="flex items-center space-x-2">
-            <h3 className="text-xl font-semibold">
-              React Developer Intern @ Trustopay
-            </h3>
-            <img src={trustopay} alt="Trustopay Logo" className="w-6 h-6 object-contain" />
-          </div>
-          <p className="text-sm text-gray-500">Aug 2024 – Sept 2024 · Vadodara, India</p>
-          <ul className="list-disc list-inside mt-2 space-y-1">
-            <li>Designed and implemented the front-end architecture for Trustopay web app</li>
-            <li>Enhanced user engagement by 40% and reduced drop-off rates by 25%</li>
-            <li>Built reusable React components for scalable development</li>
-            <li>Optimized performance using best industry practices</li>
-          </ul>
-        </div>
-      </div>
+    <p className="text-sm text-gray-500"> Remote · Internship · Mar 2025 – Present</p>
+
+    <ul className="list-disc list-inside mt-2 space-y-1">
+      <li>Working on Event-Driven Architecture with Kafka</li>
+      <li>Built Notification System with FCM (Firebase Cloud Messaging)</li>
+      <li>Designed a scalable post schema for structured live, planned and general activity</li>
+      <li>Contributed to restructuring the backend from monolithic to multiple microservices</li>
+      <li><strong>Tech Stack:</strong> Node.js, Express, Docker, Kafka, Sequelize, PostgreSQL, Firebase</li>
+    </ul>
+  </div>
+
+  {/* Trustopay */}
+  <div className='mb-10 md:px-4'>
+    <div className="flex items-end space-x-2">
+  <h3 className="text-xl font-semibold">
+    Software Engineer – MeetMux
+  </h3>
+  <a
+    href="https://www.linkedin.com/company/trustopayy" // Replace with actual LinkedIn URL
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block"
+  >
+    <img
+      src={trustopay}
+      alt="Trustopay logo"
+      className="w-6 h-6 object-contain"
+    />
+  </a>
+</div>
+
+    <p className="text-sm text-gray-500">Vadodara · Internship · Aug 2024 – Sept 2024</p>
+
+    <ul className="list-disc list-inside mt-2 space-y-1">
+      <li>Designed and implemented the front-end architecture for Trustopay web app</li>
+      <li>Enhanced user engagement by 40% and reduced drop-off rates by 25%</li>
+      <li>Built reusable React components for scalable development</li>
+      <li>Optimized performance using best industry practices</li>
+    </ul>
+  </div>
+</div>
+
     </div>
   )
 }

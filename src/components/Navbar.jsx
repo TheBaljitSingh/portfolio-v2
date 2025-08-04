@@ -38,7 +38,7 @@ export default function Navbar() {
         <div className="flex items-center space-x-3 sm:space-x-4 md:space-x-6 text-sm sm:text-base">
           {/* <Moon className="w-5 h-5 text-gray-600" /> */}
           <a href="/" className="hover:text-blue-600 transition">Home</a>
-          <a href="/acheivments" className="hover:text-blue-600 transition">Acheivments</a>
+          <a href="/achievements" className="hover:text-blue-600 transition">Achievement</a>
           <a href="/about" className="hover:text-blue-600 transition">About</a>
   <div className="relative group inline-block">
       <a
