@@ -42,7 +42,7 @@ export default function Navbar() {
           <a href="/about" className="hover:text-blue-600 transition">About</a>
   <div className="relative group inline-block">
       <a
-        href="https://drive.google.com/file/d/13NkkdFkwCARFm_Em_b-nzfG8z6yEnNZ3/view?usp=sharing"
+        href="https://drive.google.com/file/d/1RLdBRSsklKWoBj9p8xOJRmXrqnntVnw6/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
       >
