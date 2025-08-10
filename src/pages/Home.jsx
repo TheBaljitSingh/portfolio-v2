@@ -3,6 +3,7 @@ import { FaReact, FaNode, FaCss3, FaHtml5, FaVuejs, FaNodeJs, FaGithub, FaInterc
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import invoiceImg from '../images/invoice-generator.png'
+import cloudImg from "../images/cloud_dhcp.jpeg"
 import eventSchedular from "../images/events-schedular.png"
 import chatgptImg from '../images/chatgpt-clone.png'
 import trustopay from "../images/trustupay logo.png";
@@ -19,6 +20,13 @@ export default function Home() {
   const handleNext = () => setIndex((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
 
   const projects = [
+    {
+      title:"Hosting Service(like vercel)",
+      description:"Created React app hosting service, its like vercel feature to deploy you react application to cloud",
+      tech:['Typescript', 'Node.js','AWS S3', 'React'],
+      image:cloudImg,
+      link:['https://github.com/TheBaljitSingh/vercel-v2']
+    },
     {
       title: "Invoice Generator",
       description: "A Simple Invoice Generator Tool, Generate customizable invoices. Add your branding, calculate taxes, and download with effortlessly",
