@@ -10,6 +10,7 @@ import trustopay from "../images/trustupay logo.png";
 import meetmux from "../images/meetmux_logo.jpeg"
 import weatherImg from "../images/weather.png"
 import GlobeTrotter from '../images/Globetrotter.png'
+import Leadmanagement from "../images/lead_management.png"
 import { CiGlobe } from 'react-icons/ci';
 
 
@@ -54,6 +55,13 @@ export default function Home() {
       image: GlobeTrotter,
       tech: ['React', 'Node.js', 'Google Gimini', 'Mongodb'],
       link: ['https://github.com/TheBaljitSingh/Headout-assignment', 'https://headout-assignment-psi.vercel.app/']
+    },
+    {
+      title:"Lead management portal",
+      description:"A portal to manage the leads(like a camapign data..), performing CRUD operation with backend support, integrated AG Grid in react",
+      image: Leadmanagement,
+      tech: ['React', "Node.js", "Tailwind Css", "Git"],
+      link: ['https://github.com/TheBaljitSingh/Erino-assignment', 'https://erino-assignment-five.vercel.app/']
     },
     {
       title: "Weather Condition Checker",
