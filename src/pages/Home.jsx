@@ -11,6 +11,7 @@ import meetmux from "../images/meetmux_logo.jpeg"
 import weatherImg from "../images/weather.png"
 import GlobeTrotter from '../images/Globetrotter.png'
 import Leadmanagement from "../images/lead_management.png"
+import ReportManagement from "../images/reportmanagement.png"
 import { CiGlobe } from 'react-icons/ci';
 
 
@@ -62,6 +63,13 @@ export default function Home() {
       image: Leadmanagement,
       tech: ['React', "Node.js", "Tailwind Css", "Git"],
       link: ['https://github.com/TheBaljitSingh/Erino-assignment', 'https://erino-assignment-five.vercel.app/']
+    },
+    {
+      title:"Report submission portal",
+      description:"upload the report in csv format, asynchronously it will process using Queue machanism",
+      image: ReportManagement,
+      tech: ["Node.js", "Bullmq", "Redis", "React"],
+      link: ['https://github.com/TheBaljitSingh/reports', 'https://reports-blue-pi.vercel.app/login']
     },
     {
       title: "Weather Condition Checker",
