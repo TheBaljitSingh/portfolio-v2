@@ -202,7 +202,7 @@ export default function Home() {
 </div>
 
 
-    <p className="text-sm text-gray-500"> Remote · Internship · Mar 2025 – Present</p>
+    <p className="text-sm text-gray-500"> Remote · Internship · Mar 2025 – Aug 2025</p>
 
     <ul className="list-disc list-inside mt-2 space-y-1">
       <li>Working on Event-Driven Architecture with Kafka</li>
