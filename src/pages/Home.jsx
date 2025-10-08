@@ -217,7 +217,7 @@ export default function Home() {
   <div className='mb-10 md:px-4'>
     <div className="flex items-end space-x-2">
   <h3 className="text-xl font-semibold">
-    Software Engineer – MeetMux
+    Software Engineer – Trustopay
   </h3>
   <a
     href="https://www.linkedin.com/company/trustopayy" // Replace with actual LinkedIn URL
