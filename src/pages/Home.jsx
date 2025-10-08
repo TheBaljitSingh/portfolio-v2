@@ -12,6 +12,7 @@ import weatherImg from "../images/weather.png"
 import GlobeTrotter from '../images/Globetrotter.png'
 import Leadmanagement from "../images/lead_management.png"
 import ReportManagement from "../images/reportmanagement.png"
+import insansa from "../images/insansa_logo.jpg";
 import { CiGlobe } from 'react-icons/ci';
 
 
@@ -181,6 +182,36 @@ export default function Home() {
     <div className="min-h-screen py-16 md:px-1 text-gray-800">
   <h2 className="text-3xl font-bold mb-8 ">Work Experience</h2>
 
+
+
+  {/* Trustopay */}
+  <div className='mb-10 md:px-4'>
+    <div className="flex items-end space-x-2">
+  <h3 className="text-xl font-semibold">
+    Software Engineer - Insansa
+  </h3>
+  <a
+    href="https://www.linkedin.com/company/insansa-techknowledge/" // Replace with actual LinkedIn URL
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block"
+  >
+    <img
+      src={insansa}
+      alt="Insansa logo"
+      className="w-6 h-6 object-contain"
+    />
+  </a>
+</div>
+
+    <p className="text-sm text-gray-500">Vadodara ·  Sept 2025 - Present</p>
+
+    <ul className="list-disc list-inside mt-2 space-y-1">
+      <li>working as a full-stack engineer</li>
+     
+    </ul>
+  </div>
+
   {/* MeetMux */}
   <div className="mb-10 md:px-4">
 <div className="flex items-end space-x-2">
@@ -202,13 +233,13 @@ export default function Home() {
 </div>
 
 
-    <p className="text-sm text-gray-500"> Remote · Internship · Mar 2025 – Aug 2025</p>
+    <p className="text-sm text-gray-500"> Remote · Internship · Mar 2025 - Aug 2025</p>
 
     <ul className="list-disc list-inside mt-2 space-y-1">
-      <li>Working on Event-Driven Architecture with Kafka</li>
+      <li>worked with service architecture</li>
       <li>Built Notification System with FCM (Firebase Cloud Messaging)</li>
       <li>Designed a scalable post schema for structured live, planned and general activity</li>
-      <li>Contributed to restructuring the backend from monolithic to multiple microservices</li>
+      <li>Contributed in the devops team in deployment</li>
       <li><strong>Tech Stack:</strong> Node.js, Express, Docker, Kafka, Sequelize, PostgreSQL, Firebase</li>
     </ul>
   </div>
