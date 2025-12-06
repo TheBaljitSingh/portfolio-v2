@@ -94,7 +94,7 @@ export default function Home() {
           Hi, I'm Baljit 👋
         </h1>
         <span className="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full mt-2 inline-block">
-          Aspiring Software Engineer
+          Software Engineer
         </span>
 
       </div>
