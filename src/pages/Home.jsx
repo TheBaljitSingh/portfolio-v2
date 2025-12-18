@@ -208,7 +208,7 @@ export default function Home() {
 
     <ul className="list-disc list-inside mt-2 space-y-1">
       <li>working as a full-stack engineer</li>
-     
+      <li>worked on OAuth integration, and a simple WhatsApp reminder scheduling system using the thair API</li>
     </ul>
   </div>
 
