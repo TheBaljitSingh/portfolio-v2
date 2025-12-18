@@ -37,21 +37,16 @@ export default function Navbar() {
       <div className="flex items-center justify-between h-16">
         {/* Profile Image */}
         <div className="flex-shrink-0">
-          <a href="/">
-            <img
-              ref={logoRef}
-              src={profile}
-              alt="profile"
-              className="w-10 h-10 rounded-full object-cover opacity-0"
-            />
+           <a ref={(el) => (linkRefs.current[0] = el)} href="/" className="opacity-0 hover:text-blue-600 transition">
+            Home
           </a>
         </div>
 
         {/* Nav Links */}
         <div className="flex items-center space-x-3 sm:space-x-4 md:space-x-6 text-sm sm:text-base">
-          <a ref={(el) => (linkRefs.current[0] = el)} href="/" className="opacity-0 hover:text-blue-600 transition">
+          {/* <a ref={(el) => (linkRefs.current[0] = el)} href="/" className="opacity-0 hover:text-blue-600 transition">
             Home
-          </a>
+          </a> */}
           <a ref={(el) => (linkRefs.current[1] = el)} href="/achievements" className="opacity-0 hover:text-blue-600 transition">
             Achievement
           </a>
