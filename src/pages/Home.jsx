@@ -267,10 +267,8 @@ export default function Home() {
     <p className="text-sm text-gray-500">Vadodara · Internship · Aug 2024 – Sept 2024</p>
 
     <ul className="list-disc list-inside mt-2 space-y-1">
-      <li>Designed and implemented the front-end architecture for Trustopay web app</li>
-      <li>Enhanced user engagement by 40% and reduced drop-off rates by 25%</li>
-      <li>Built reusable React components for scalable development</li>
-      <li>Optimized performance using best industry practices</li>
+      <li>Worked on the TrustoPay landing page web application given Figma and outsource. used React, and Tailwind CSS.</li>
+      
     </ul>
   </div>
 </div>
