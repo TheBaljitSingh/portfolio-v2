@@ -188,7 +188,7 @@ export default function Home() {
   <div className='mb-10 md:px-4'>
     <div className="flex items-end space-x-2">
   <h3 className="text-xl font-semibold">
-    Software Engineer - Insansa
+    Software Developer - Insansa
   </h3>
   <a
     href="https://www.linkedin.com/company/insansa-techknowledge/" // Replace with actual LinkedIn URL
@@ -207,7 +207,7 @@ export default function Home() {
     <p className="text-sm text-gray-500">Vadodara ·  Sept 2025 - Present</p>
 
     <ul className="list-disc list-inside mt-2 space-y-1">
-      <li>working as a full-stack engineer</li>
+      <li>working as a full-stack developer</li>
       <li>worked on OAuth integration, and a simple WhatsApp reminder scheduling system using thair API</li>
     </ul>
   </div>
@@ -216,7 +216,7 @@ export default function Home() {
   <div className="mb-10 md:px-4">
 <div className="flex items-end space-x-2">
   <h3 className="text-xl font-semibold">
-    Software Engineer – MeetMux
+    Software Developer – MeetMux
   </h3>
   <a
     href="https://www.linkedin.com/company/meetmux/" // Replace with actual LinkedIn URL
@@ -248,7 +248,7 @@ export default function Home() {
   <div className='mb-10 md:px-4'>
     <div className="flex items-end space-x-2">
   <h3 className="text-xl font-semibold">
-    Software Engineer – Trustopay
+    Software Developer – Trustopay
   </h3>
   <a
     href="https://www.linkedin.com/company/trustopayy" // Replace with actual LinkedIn URL
