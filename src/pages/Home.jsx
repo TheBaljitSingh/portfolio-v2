@@ -13,6 +13,7 @@ import GlobeTrotter from '../images/Globetrotter.png'
 import Leadmanagement from "../images/lead_management.png"
 import ReportManagement from "../images/reportmanagement.png"
 import insansa from "../images/insansa_logo.jpg";
+import nodueImg from "../images/no-due.png";
 import { CiGlobe } from 'react-icons/ci';
 
 
@@ -23,6 +24,13 @@ export default function Home() {
   const handleNext = () => setIndex((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
 
   const projects = [
+    {
+      title:"No Due",
+      description:"Developed a full-stack SaaS application that automates scheduled and instant WhatsApp reminders for due recovery, featuring a real-time admin dashboard and multiple customizable payment terms.",
+      tech:['Javascript','Meta Graph API','React','Node.js','Mongodb'],
+      image:nodueImg,
+      link:['https://github.com/TheBaljitSingh/no-due','https://no-due-roan.vercel.app/']
+    },
     {
       title:"Hosting Service(like vercel)",
       description:"Created React app hosting service, its like vercel feature to deploy you react application to cloud",
@@ -81,7 +89,7 @@ export default function Home() {
     }
   ];
   const skills = [
-    "C++", "React", "Node.js", "Javascript", "Node.js", "Next.js", "Postgres", "Docker","Kafka", "AWS"
+    "C++", "React", "Node.js", "Javascript", "Node.js", "Next.js", "Postgres", "Docker", "AWS"
   ];
 
   return (
@@ -121,18 +129,18 @@ export default function Home() {
 
       </div>
       {/* grid card */}
-        <h2 className="text-3xl font-bold mb-8 ">Projects</h2>
+      <h2 className="text-3xl font-bold mb-8 ">Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:px-4">
         {projects.map((project, i) => (
           <div key={i} className="bg-white rounded-xl shadow-lg overflow-hidden">
             <a href={project.link[1]}>
 
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-48 object-cover hover:cursor-pointer"
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-cover hover:cursor-pointer"
               />
-              </a>
+            </a>
 
             <div className="p-4 space-y-2">
               {/* Title & Description */}
@@ -179,99 +187,102 @@ export default function Home() {
 
 
 
-    <div className="min-h-screen py-16 md:px-1 text-gray-800">
-  <h2 className="text-3xl font-bold mb-8 ">Work Experience</h2>
+      <div className="min-h-screen py-16 md:px-1 text-gray-800">
+        <h2 className="text-3xl font-bold mb-8 ">Work Experience</h2>
 
 
 
-  {/* Trustopay */}
-  <div className='mb-10 md:px-4'>
-    <div className="flex items-end space-x-2">
-  <h3 className="text-xl font-semibold">
-    Software Developer - Insansa
-  </h3>
-  <a
-    href="https://www.linkedin.com/company/insansa-techknowledge/" // Replace with actual LinkedIn URL
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block"
-  >
-    <img
-      src={insansa}
-      alt="Insansa logo"
-      className="w-6 h-6 object-contain"
-    />
-  </a>
-</div>
+        {/* Trustopay */}
+        <div className='mb-10 md:px-4'>
+          <div className="flex items-end space-x-2">
+            <h3 className="text-xl font-semibold">
+              Software Developer - Insansa
+            </h3>
+            <a
+              href="https://www.linkedin.com/company/insansa-techknowledge/" // Replace with actual LinkedIn URL
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <img
+                src={insansa}
+                alt="Insansa logo"
+                className="w-6 h-6 object-contain"
+              />
+            </a>
+          </div>
 
-    <p className="text-sm text-gray-500">Vadodara ·  Sept 2025 - Present</p>
+          <p className="text-sm text-gray-500">Vadodara ·  Sept 2025 - Present</p>
 
-    <ul className="list-disc list-inside mt-2 space-y-1">
-      <li>working as a full-stack developer</li>
-      <li>worked on OAuth integration, and a simple WhatsApp reminder scheduling system using thair API</li>
-    </ul>
-  </div>
+          <ul className="list-disc pl-5 mt-2 space-y-1">
+            <li>working as a full-stack developer</li>
+            <li>Integrated the WhatsApp Cloud Messaging API with webhooks to enable real-time communication and successfully completed Meta verification to become a Tech Provider. <a className='text-blue-600' href="https://no-due-roan.vercel.app" target="_blank" rel="noreferrer">link</a></li>
+            <li>Implemented Two-Factor Authentication (2FA) to enhance application security.</li>
+            <li>Developed and integrated real-time notifications on the admin dashboard using Socket.IO to track customer payment excuses by capturing responses from WhatsApp template messages with interactive buttons.</li>
+            <li>Built a portfolio website with smooth animations using GSAP. <a className='text-blue-600' href="https://insansa-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">link</a></li>
+          </ul>
+        </div>
 
-  {/* MeetMux */}
-  <div className="mb-10 md:px-4">
-<div className="flex items-end space-x-2">
-  <h3 className="text-xl font-semibold">
-    Software Developer – MeetMux
-  </h3>
-  <a
-    href="https://www.linkedin.com/company/meetmux/" // Replace with actual LinkedIn URL
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block"
-  >
-    <img
-      src={meetmux}
-      alt="Meetmux Logo"
-      className="w-6 h-6 object-contain"
-    />
-  </a>
-</div>
+        {/* MeetMux */}
+        <div className="mb-10 md:px-4">
+          <div className="flex items-end space-x-2">
+            <h3 className="text-xl font-semibold">
+              Software Developer – MeetMux
+            </h3>
+            <a
+              href="https://www.linkedin.com/company/meetmux/" // Replace with actual LinkedIn URL
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <img
+                src={meetmux}
+                alt="Meetmux Logo"
+                className="w-6 h-6 object-contain"
+              />
+            </a>
+          </div>
 
 
-    <p className="text-sm text-gray-500"> Remote · Internship · Mar 2025 - Aug 2025</p>
+          <p className="text-sm text-gray-500"> Remote · Internship · Mar 2025 - Aug 2025</p>
 
-    <ul className="list-disc list-inside mt-2 space-y-1">
-      <li>worked with service architecture</li>
-      <li>Built Notification System with FCM (Firebase Cloud Messaging)</li>
-      <li>Designed a scalable post schema for structured live, planned and general activity</li>
-      <li>Contributed in the devops team in deployment</li>
-      <li><strong>Tech Stack:</strong> Node.js, Express, Docker, Kafka, Sequelize, PostgreSQL, Firebase</li>
-    </ul>
-  </div>
+          <ul className="list-disc pl-5 mt-2 space-y-1">
+            <li>worked with service architecture</li>
+            <li>Built Notification System with FCM (Firebase Cloud Messaging)</li>
+            <li>Designed a scalable post schema for structured live, planned and general activity</li>
+            <li>Contributed in the devops team in deployment</li>
+            <li><strong>Tech Stack:</strong> Node.js, Express, Docker, Sequelize, PostgreSQL, Firebase</li>
+          </ul>
+        </div>
 
-  {/* Trustopay */}
-  <div className='mb-10 md:px-4'>
-    <div className="flex items-end space-x-2">
-  <h3 className="text-xl font-semibold">
-    Software Developer – Trustopay
-  </h3>
-  <a
-    href="https://www.linkedin.com/company/trustopayy" // Replace with actual LinkedIn URL
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block"
-  >
-    <img
-      src={trustopay}
-      alt="Trustopay logo"
-      className="w-6 h-6 object-contain"
-    />
-  </a>
-</div>
+        {/* Trustopay */}
+        <div className='mb-10 md:px-4'>
+          <div className="flex items-end space-x-2">
+            <h3 className="text-xl font-semibold">
+              Software Developer – Trustopay
+            </h3>
+            <a
+              href="https://www.linkedin.com/company/trustopayy" // Replace with actual LinkedIn URL
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <img
+                src={trustopay}
+                alt="Trustopay logo"
+                className="w-6 h-6 object-contain"
+              />
+            </a>
+          </div>
 
-    <p className="text-sm text-gray-500">Vadodara · Internship · Aug 2024 – Sept 2024</p>
+          <p className="text-sm text-gray-500">Vadodara · Internship · Aug 2024 – Sept 2024</p>
 
-    <ul className="list-disc list-inside mt-2 space-y-1">
-      <li>Worked on the TrustoPay landing page web application given Figma and outsource. used React, and Tailwind CSS.</li>
-      
-    </ul>
-  </div>
-</div>
+          <ul className="list-disc pl-5 mt-2 space-y-1">
+            <li>Worked on the TrustoPay landing page web application given Figma and outsource. used React, and Tailwind CSS.</li>
+
+          </ul>
+        </div>
+      </div>
 
     </div>
   )
