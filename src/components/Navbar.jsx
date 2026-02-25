@@ -55,7 +55,7 @@ export default function Navbar() {
           </a>
           <a
             ref={(el) => (linkRefs.current[3] = el)}
-            href="https://drive.google.com/file/d/1RLdBRSsklKWoBj9p8xOJRmXrqnntVnw6/view?usp=sharing"
+            href="https://drive.google.com/file/d/1sOr0T8aO96cM3DR0lSLrm7Osz-_jWd4x/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="opacity-0"
