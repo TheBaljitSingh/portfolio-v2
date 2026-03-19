@@ -14,6 +14,7 @@ import Leadmanagement from "../images/lead_management.png"
 import ReportManagement from "../images/reportmanagement.png"
 import insansa from "../images/insansa_logo.jpg";
 import nodueImg from "../images/no-due.png";
+import insansaPort from "../images/insansa-portfolio.png";
 import { CiGlobe } from 'react-icons/ci';
 
 
@@ -37,6 +38,13 @@ export default function Home() {
       tech:['Typescript', 'Node.js','AWS S3', 'React'],
       image:cloudImg,
       link:['https://github.com/TheBaljitSingh/vercel-v2']
+    },
+    {
+      title:"Insansa Portfolio",
+      description:"Developed company portfolio website to showcase projects and online better presence .",
+      tech:['React','GSAP'],
+      image:insansaPort,
+      link:['https://github.com/TheBaljitSingh/insansa-portfolio','https://insansa-portfolio.vercel.app/']
     },
     {
       title: "Invoice Generator",
