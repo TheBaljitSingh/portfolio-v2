@@ -115,7 +115,7 @@ export default function Home() {
 
       </div>
 
-      <div className="my-6">
+      <div className="">
         <h2 className="text-2xl font-bold mb-6 ">Skills</h2>
         <div className="flex flex-wrap gap-3  justify-center">
           {skills.map((skill, idx) => (
@@ -130,12 +130,101 @@ export default function Home() {
       </div>
 
       {/* Projects Header */}
-      <div className='flex justify-start mt-12'>
+     
+    <div className="min-h-screen py-16 md:px-1 text-gray-800">
+        <h2 className="text-3xl font-bold mb-8 ">Work Experience</h2>
+
+        {/* Trustopay */}
+        <div className='mb-10 md:px-4'>
+          <div className="flex items-end space-x-2">
+            <h3 className="text-xl font-semibold">
+              Full Stack Developer - Insansa
+            </h3>
+            <a
+              href="https://www.linkedin.com/company/insansa-techknowledge/" // Replace with actual LinkedIn URL
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <img
+                src={insansa}
+                alt="Insansa logo"
+                className="w-6 h-6 object-contain"
+              />
+            </a>
+          </div>
+
+          <p className="text-sm text-gray-500">Vadodara ·  Sept 2025 - Present</p>
+
+          <ul className="list-disc pl-5 mt-2 space-y-1">
+            <li>working as a full-stack developer</li>
+            <li>Integrated the WhatsApp Cloud Messaging API with webhooks to enable real-time communication and successfully completed Meta verification to become a Tech Provider. <a className='text-blue-600' href="https://no-due-roan.vercel.app" target="_blank" rel="noreferrer">link</a></li>
+            <li>Implemented Two-Factor Authentication (2FA) to enhance application security.</li>
+            <li>Developed and integrated real-time notifications on the admin dashboard using Socket.IO to track customer payment excuses by capturing responses from WhatsApp template messages with interactive buttons.</li>
+            <li>Built a portfolio website with smooth animations using GSAP. <a className='text-blue-600' href="https://insansa-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">link</a></li>
+          </ul>
+        </div>
+
+        {/* MeetMux */}
+        <div className="mb-10 md:px-4">
+          <div className="flex items-end space-x-2">
+            <h3 className="text-xl font-semibold">
+              Software Developer Engineer (Backend) – MeetMux
+            </h3>
+            <a
+              href="https://www.linkedin.com/company/meetmux/" // Replace with actual LinkedIn URL
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <img
+                src={meetmux}
+                alt="Meetmux Logo"
+                className="w-6 h-6 object-contain"
+              />
+            </a>
+          </div>
 
 
+          <p className="text-sm text-gray-500"> Remote · Internship · Mar 2025 - Aug 2025</p>
 
+          <ul className="list-disc pl-5 mt-2 space-y-1">
+            <li>worked with service architecture</li>
+            <li>Built Notification System with FCM (Firebase Cloud Messaging)</li>
+            <li>Designed a scalable post schema for structured live, planned and general activity</li>
+            <li>Contributed in the devops team in deployment</li>
+            <li><strong>Tech Stack:</strong> Node.js, Express, Docker, Sequelize, PostgreSQL, Firebase</li>
+          </ul>
+        </div>
 
-      </div>
+        {/* Trustopay */}
+        <div className='mb-10 md:px-4'>
+          <div className="flex items-end space-x-2">
+            <h3 className="text-xl font-semibold">
+              Software Developer – Trustopay
+            </h3>
+            <a
+              href="https://www.linkedin.com/company/trustopayy" // Replace with actual LinkedIn URL
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <img
+                src={trustopay}
+                alt="Trustopay logo"
+                className="w-6 h-6 object-contain"
+              />
+            </a>
+          </div>
+
+          <p className="text-sm text-gray-500">Vadodara · Internship · Aug 2024 – Sept 2024</p>
+
+          <ul className="list-disc pl-5 mt-2 space-y-1">
+            <li>Worked on the TrustoPay landing page web application given Figma and outsource. used React, and Tailwind CSS.</li>
+
+          </ul>
+        </div>
+      </div>      
       {/* grid card */}
       <h2 className="text-3xl font-bold mb-8 ">Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:px-4">
@@ -195,102 +284,7 @@ export default function Home() {
 
 
 
-      <div className="min-h-screen py-16 md:px-1 text-gray-800">
-        <h2 className="text-3xl font-bold mb-8 ">Work Experience</h2>
-
-
-
-        {/* Trustopay */}
-        <div className='mb-10 md:px-4'>
-          <div className="flex items-end space-x-2">
-            <h3 className="text-xl font-semibold">
-              Software Developer - Insansa
-            </h3>
-            <a
-              href="https://www.linkedin.com/company/insansa-techknowledge/" // Replace with actual LinkedIn URL
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block"
-            >
-              <img
-                src={insansa}
-                alt="Insansa logo"
-                className="w-6 h-6 object-contain"
-              />
-            </a>
-          </div>
-
-          <p className="text-sm text-gray-500">Vadodara ·  Sept 2025 - Present</p>
-
-          <ul className="list-disc pl-5 mt-2 space-y-1">
-            <li>working as a full-stack developer</li>
-            <li>Integrated the WhatsApp Cloud Messaging API with webhooks to enable real-time communication and successfully completed Meta verification to become a Tech Provider. <a className='text-blue-600' href="https://no-due-roan.vercel.app" target="_blank" rel="noreferrer">link</a></li>
-            <li>Implemented Two-Factor Authentication (2FA) to enhance application security.</li>
-            <li>Developed and integrated real-time notifications on the admin dashboard using Socket.IO to track customer payment excuses by capturing responses from WhatsApp template messages with interactive buttons.</li>
-            <li>Built a portfolio website with smooth animations using GSAP. <a className='text-blue-600' href="https://insansa-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">link</a></li>
-          </ul>
-        </div>
-
-        {/* MeetMux */}
-        <div className="mb-10 md:px-4">
-          <div className="flex items-end space-x-2">
-            <h3 className="text-xl font-semibold">
-              Software Developer – MeetMux
-            </h3>
-            <a
-              href="https://www.linkedin.com/company/meetmux/" // Replace with actual LinkedIn URL
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block"
-            >
-              <img
-                src={meetmux}
-                alt="Meetmux Logo"
-                className="w-6 h-6 object-contain"
-              />
-            </a>
-          </div>
-
-
-          <p className="text-sm text-gray-500"> Remote · Internship · Mar 2025 - Aug 2025</p>
-
-          <ul className="list-disc pl-5 mt-2 space-y-1">
-            <li>worked with service architecture</li>
-            <li>Built Notification System with FCM (Firebase Cloud Messaging)</li>
-            <li>Designed a scalable post schema for structured live, planned and general activity</li>
-            <li>Contributed in the devops team in deployment</li>
-            <li><strong>Tech Stack:</strong> Node.js, Express, Docker, Sequelize, PostgreSQL, Firebase</li>
-          </ul>
-        </div>
-
-        {/* Trustopay */}
-        <div className='mb-10 md:px-4'>
-          <div className="flex items-end space-x-2">
-            <h3 className="text-xl font-semibold">
-              Software Developer – Trustopay
-            </h3>
-            <a
-              href="https://www.linkedin.com/company/trustopayy" // Replace with actual LinkedIn URL
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block"
-            >
-              <img
-                src={trustopay}
-                alt="Trustopay logo"
-                className="w-6 h-6 object-contain"
-              />
-            </a>
-          </div>
-
-          <p className="text-sm text-gray-500">Vadodara · Internship · Aug 2024 – Sept 2024</p>
-
-          <ul className="list-disc pl-5 mt-2 space-y-1">
-            <li>Worked on the TrustoPay landing page web application given Figma and outsource. used React, and Tailwind CSS.</li>
-
-          </ul>
-        </div>
-      </div>
+    
 
     </div>
   )
