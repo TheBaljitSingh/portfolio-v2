@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import { IoMdDocument } from "react-icons/io";
-import profile from "../images/baljit.jpg";
 import { gsap } from "gsap";
 
 export default function Navbar() {

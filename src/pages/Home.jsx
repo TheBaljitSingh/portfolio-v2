@@ -17,7 +17,7 @@ import nodueImg from "../images/no-due.png";
 import insansaPort from "../images/insansa-portfolio.png";
 import { CiGlobe } from 'react-icons/ci';
 import { FiExternalLink } from 'react-icons/fi';
-import me from "../../src/images/baljit.jpg"
+import me from "../../src/images/baljit.png"
 
 
 export default function Home() {
@@ -108,15 +108,15 @@ export default function Home() {
     <div className="p-6 max-w-6xl mx-auto">
       {/* Profile Section */}
       <div className="text-center mb-10 mt-12">
-        <div className='flex justify-center items-center gap-2'>
-        <h1 className="text-4xl font-bold text-gray-900">
+        <div className=' flex flex-col md:flex-row justify-center items-center md:items-start gap-2'>
+        <h1 className="text-4xl font-bold text-gray-900 mt-4 ">
           Hi👋, I'm Baljit  
         </h1>
         <img src={me} height={80} width={80} alt=""  className='rounded-xl'/>
-        </div>
-        <span className="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full mt-2 inline-block">
+        <span className=" md:absolute bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full mt-4 md:mt-18 inline-block">
           A Software Engineer
         </span>
+        </div>
 
       </div>
 
