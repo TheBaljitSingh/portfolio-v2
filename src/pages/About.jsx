@@ -12,7 +12,7 @@ export default function About() {
 
 
         <p>
-          Over time, I built my technical skillset in <strong>JavaScript/TypeScript</strong>, <strong>React.js</strong>, and <strong>Node.js</strong>. I’ve actively participated in <strong>hackathons</strong> and collaborative projects that sharpened my team and problem-solving skills.
+          Over time, I built my technical skillset in <strong>JavaScript/TypeScript</strong>, <strong>React.js</strong>, <strong>Next.js</strong> and <strong>Node.js</strong>. I’ve actively participated in <strong>hackathons</strong> and collaborative projects that sharpened my team and problem-solving skills.
         </p>
 
         <p>

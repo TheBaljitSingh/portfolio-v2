@@ -10,10 +10,10 @@ const Footer = () => {
       <p>
         Built with love by{" "}
         <a
-          href="https://thebaljitsingh.in"
+          href="https://linkedin.com/in/thebaljitsingh"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-300 hover:underline"
+          className="text-blue-500 hover:underline"
         >
           Baljit Singh
         </a>

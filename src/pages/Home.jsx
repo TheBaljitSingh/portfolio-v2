@@ -16,6 +16,8 @@ import insansa from "../images/insansa_logo.jpg";
 import nodueImg from "../images/no-due.png";
 import insansaPort from "../images/insansa-portfolio.png";
 import { CiGlobe } from 'react-icons/ci';
+import { FiExternalLink } from 'react-icons/fi';
+import me from "../../src/images/baljit.jpg"
 
 
 export default function Home() {
@@ -97,7 +99,7 @@ export default function Home() {
     }
   ];
   const skills = [
-    "C++", "React", "Node.js", "Javascript", "Node.js", "Next.js", "Postgres", "Docker", "AWS"
+    "React", "Next.js", "Node.js", "Javascript", "Typescript","Mongodb", "Postgres", "Docker", "AWS"
   ];
 
   return (
@@ -106,9 +108,12 @@ export default function Home() {
     <div className="p-6 max-w-6xl mx-auto">
       {/* Profile Section */}
       <div className="text-center mb-10 mt-12">
+        <div className='flex justify-center items-center gap-2'>
         <h1 className="text-4xl font-bold text-gray-900">
-          Hi, I'm Baljit 👋
+          Hi👋, I'm Baljit  
         </h1>
+        <img src={me} height={80} width={80} alt=""  className='rounded-xl'/>
+        </div>
         <span className="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full mt-2 inline-block">
           A Software Engineer
         </span>
@@ -158,10 +163,11 @@ export default function Home() {
 
           <ul className="list-disc pl-5 mt-2 space-y-1">
             <li>working as a full-stack developer</li>
-            <li>Integrated the WhatsApp Cloud Messaging API with webhooks to enable real-time communication and successfully completed Meta verification to become a Tech Provider. <a className='text-blue-600' href="https://no-due-roan.vercel.app" target="_blank" rel="noreferrer">link</a></li>
-            <li>Implemented Two-Factor Authentication (2FA) to enhance application security.</li>
-            <li>Developed and integrated real-time notifications on the admin dashboard using Socket.IO to track customer payment excuses by capturing responses from WhatsApp template messages with interactive buttons.</li>
-            <li>Built a portfolio website with smooth animations using GSAP. <a className='text-blue-600' href="https://insansa-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">link</a></li>
+            <li>Developed <span className='underline underline-offset-3'>Add to Cart</span> feature using Redux</li>
+            <li>Integrated the WhatsApp Cloud Messaging API with webhooks to enable real-time communication and successfully completed Meta verification to become a Tech Provider. <a className='text-blue-600 inline-flex items-center gap-1' href="https://no-due-roan.vercel.app" target="_blank" rel="noopener noreferrer">link  <FiExternalLink/> </a></li>
+            <li>Implemented <span className='underline underline-offset-3'>Two-Factor Authentication (2FA)</span> to enhance application security.</li>
+            <li>Developed and integrated real-time notifications on the admin dashboard using Socket.IO to track customer payment excuses by capturing responses from <span className='underline underline-offset-3'>WhatsApp template messages with interactive buttons</span>.</li>
+            <li>Built a portfolio website with smooth animations using GSAP. <a className='text-blue-600 inline-flex items-center gap-1' href="https://insansa-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer">link  <FiExternalLink/> </a></li>
           </ul>
         </div>
 
@@ -169,7 +175,7 @@ export default function Home() {
         <div className="mb-10 md:px-4">
           <div className="flex items-end space-x-2">
             <h3 className="text-xl font-semibold">
-              Software Developer Engineer (Backend) – MeetMux
+              Software Developer Engineer (Backend) - MeetMux
             </h3>
             <a
               href="https://www.linkedin.com/company/meetmux/" // Replace with actual LinkedIn URL
@@ -189,10 +195,10 @@ export default function Home() {
           <p className="text-sm text-gray-500"> Remote · Internship · Mar 2025 - Aug 2025</p>
 
           <ul className="list-disc pl-5 mt-2 space-y-1">
-            <li>worked with service architecture</li>
-            <li>Built Notification System with FCM (Firebase Cloud Messaging)</li>
+            <li>worked with micro service architecture</li>
+            <li>Built <span className='underline underline-offset-3'>Notification System</span>  with FCM (Firebase Cloud Messaging)</li>
             <li>Designed a scalable post schema for structured live, planned and general activity</li>
-            <li>Contributed in the devops team in deployment</li>
+            <li>Contributed in the <span className='underline underline-offset-3'>devops</span> team for production deployment</li>
             <li><strong>Tech Stack:</strong> Node.js, Express, Docker, Sequelize, PostgreSQL, Firebase</li>
           </ul>
         </div>
