@@ -112,7 +112,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-gray-900 mt-4 ">
           Hi👋, I'm Baljit  
         </h1>
-        <img src={me} height={80} width={80} alt=""  className='rounded-xl'/>
+        {/* <img src={me} height={80} width={80} alt=""  className='rounded-xl'/> */}
         <span className=" md:absolute bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full mt-4 md:mt-18 inline-block">
           A Software Engineer
         </span>
