@@ -13,6 +13,7 @@ import GlobeTrotter from '../images/Globetrotter.png'
 import Leadmanagement from "../images/lead_management.png"
 import ReportManagement from "../images/reportmanagement.png"
 import insansa from "../images/insansa_logo.jpg";
+import lumeaf_solutions from "../images/lumeaf_solutions_logo.jpg"
 import nodueImg from "../images/no-due.png";
 import insansaPort from "../images/insansa-portfolio.png";
 import { CiGlobe } from 'react-icons/ci';
@@ -139,7 +140,37 @@ export default function Home() {
     <div className="min-h-screen py-16 md:px-1 text-gray-800">
         <h2 className="text-3xl font-bold mb-8 ">Work Experience</h2>
 
-        {/* Trustopay */}
+          {/* Lumeaf Solutions */}
+          <div className='mb-10 md:px-4'>
+          <div className="flex items-end space-x-2">
+            <h3 className="text-xl font-semibold">
+              Full Stack Developer - Lumeaf
+            </h3>
+            <a
+              href="https://www.linkedin.com/company/lumeaf-solutions"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <img
+                src={lumeaf_solutions}
+                alt="Lumeaf Solution logo"
+                className="w-6 h-6 object-contain"
+              />
+            </a>
+          </div>
+
+          <p className="text-sm text-gray-500">Surat ·  Aug 2026 - Present</p>
+
+          <ul className="list-disc pl-5 mt-2 space-y-1">
+
+          <li>Working as a Backend Engineer, building APIs and backend features using Node.js and TypeScript.</li>
+
+          </ul>
+
+        </div>
+
+        {/* Insansa */}
         <div className='mb-10 md:px-4'>
           <div className="flex items-end space-x-2">
             <h3 className="text-xl font-semibold">
