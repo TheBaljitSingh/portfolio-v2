@@ -159,11 +159,9 @@ export default function Home() {
             </a>
           </div>
 
-          <p className="text-sm text-gray-500">Vadodara ·  Sept 2025 - Present</p>
+          <p className="text-sm text-gray-500">Vadodara ·  Sept 2025 - July 2026</p>
 
           <ul className="list-disc pl-5 mt-2 space-y-1">
-            <li>working as a full-stack developer</li>
-            <li>Developed <span className='underline underline-offset-3'>Add to Cart</span> feature using Redux</li>
             <li>Integrated the WhatsApp Cloud Messaging API with webhooks to enable real-time communication and successfully completed Meta verification to become a Tech Provider. <a className='text-blue-600 inline-flex items-center gap-1' href="https://no-due-roan.vercel.app" target="_blank" rel="noopener noreferrer">link  <FiExternalLink/> </a></li>
             <li>Implemented <span className='underline underline-offset-3'>Two-Factor Authentication (2FA)</span> to enhance application security.</li>
             <li>Developed and integrated real-time notifications on the admin dashboard using Socket.IO to track customer payment excuses by capturing responses from <span className='underline underline-offset-3'>WhatsApp template messages with interactive buttons</span>.</li>
@@ -195,7 +193,6 @@ export default function Home() {
           <p className="text-sm text-gray-500"> Remote · Internship · Mar 2025 - Aug 2025</p>
 
           <ul className="list-disc pl-5 mt-2 space-y-1">
-            <li>worked with micro service architecture</li>
             <li>Built <span className='underline underline-offset-3'>Notification System</span>  with FCM (Firebase Cloud Messaging)</li>
             <li>Designed a scalable post schema for structured live, planned and general activity</li>
             <li>Contributed in the <span className='underline underline-offset-3'>devops</span> team for production deployment</li>
